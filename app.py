@@ -6,7 +6,7 @@ import tensorflow_hub as hub
 import PIL.Image as Image
 
 # Load your trained ResNet model
-model_path = "C:/Users/tamar/Downloads/varun/model.h5"
+model_path = "model.h5"
 resnet_model = tf.keras.models.load_model(model_path,custom_objects={"KerasLayer":hub.KerasLayer})
 
 # Function to make predictions
